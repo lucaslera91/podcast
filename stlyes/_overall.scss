@@ -1,0 +1,26 @@
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    /*font-family:'Roboto Slab', serif;*/
+    color: black;
+    /*font-family: 'IBM Plex Sans', sans-serif;*/
+    font-family: 'IBM Plex Mono', monospace;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

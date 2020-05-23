@@ -1,0 +1,255 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 1s ease-in-out;
+    
+    
+}
+
+.navegador{
+    width: 100%;
+    background-color: yellow;
+    display:flex;
+    flex-direction: row;
+    margin: 0px;
+    transition: 1s ease-in-out;
+}
+
+label{
+    display: none;
+}
+
+header span{
+    color: white;
+}
+.navegador .menuh {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    top: 22px;
+    right: 19px;
+    bottom: 14px;
+    width: 18px;
+    height: 12px;
+    color: black;
+
+}
+.logo{
+    position: relative;
+    height: 44px;
+    width: 24px;
+    left: 16px;
+    top: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+.ul{
+    position: relative;
+    /*top: 44px;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 224px;
+    display: none;
+    transition: 0.4s ease;
+
+}
+
+/*#menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    display: none;
+    font-size: 16px;
+    z-index: 1;
+    position: relative;
+    background-color: #0000EC;
+    height: 50px;
+    padding-left: 16px;
+    transition: height 0.4s ease-in-out;
+    
+}*/
+li{
+    height: 56px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 0.2s ease-in-out;
+    
+    z-index: 1;
+    position: relative;
+    background-color: #0000EC;
+    padding-left: 16px;
+    }
+
+
+
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+li a:hover{
+    text-decoration: line-through;
+    color: #00F3BB;
+   
+}
+li a:active{
+    text-decoration: line-through;
+    color: #060A24;
+    opacity: 56%;
+
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    width: 25px;
+    height: 13px;
+    z-index: 2;
+    opacity: 0;
+}
+
+#hamburguesa:checked ~ .ul {
+    display: flex;
+}
+
+.navegador .menuh > div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    z-index: -1;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    
+}
+.navegador .menuh > div:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    height: 2px;
+   background-color: black;
+    z-index: 1;
+}
+.navegador .menuh > div:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    z-index: 1;
+}
+#hamburguesa:checked ~ .menuh > div{
+    transform: rotate(135deg);
+}
+#hamburguesa:checked ~ .menuh > div:before{
+    top: 0em;
+    
+    transform: rotate(90deg);
+}
+#hamburguesa:checked ~ .menuh > div:after{
+    transform: rotate(90deg);
+    top:0em;
+
+}
+
+@media screen and (min-width: 700px){
+
+    header{
+        flex-direction: row;
+        justify-content: flex-end;
+
+   }
+   .navegador .menuh > div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 0px;
+    background-color: black;
+    z-index: -1;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    
+}
+.navegador .menuh > div:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    height: 0px;
+    z-index: 0;
+}
+.navegador .menuh > div:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 0px;
+    z-index: 1;
+}
+#hamburguesa:checked ~ .ul {
+    display: none;
+}
+input[type="checkbox"]{
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    width: 25px;
+    height: 13px;
+    z-index: -1;
+    opacity: 0;
+}
+.ul{
+    width: 100%;
+    top:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 56px;
+    background-color: white;
+    z-index: 0;
+    padding-right: 6px;
+
+}
+#menu {
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+    transition: 0.2 ease;
+    background-color: yellow;
+}
+
+li{
+    background-color: white;
+    color: #060A24;
+    font-size: 16px;
+    height: 56;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2 ease;
+
+    
+}
+a {
+
+    color:#060A24;
+}
+}
