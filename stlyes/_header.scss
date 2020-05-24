@@ -229,7 +229,7 @@ input[type="checkbox"]{
     z-index: 1;
 }
 #hamburguesa:checked ~ .ul {
-    width: 100%;
+    
     top:0px;
     display: flex;
     flex-direction: row;
@@ -239,6 +239,12 @@ input[type="checkbox"]{
     z-index: 0;
     padding-right: 6px;
     
+}
+#hamburguesa:checked ~ #menu {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+    opacity: 1;
 }
 input[type="checkbox"]{
     position: absolute;
@@ -250,7 +256,7 @@ input[type="checkbox"]{
     opacity: 0;
 }
 .ul{
-    width: 100%;
+    width: auto;
     top:0px;
     display: flex;
     flex-direction: row;
@@ -262,11 +268,7 @@ input[type="checkbox"]{
     width: auto;
 
 }
-.dummybox{
-    width: 500px;
-    z-index: 2;
-    background-color: red;
-}
+
 #menu {
     background-color: gold;
     display: flex;
