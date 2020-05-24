@@ -177,8 +177,15 @@ input[type="checkbox"]{
        display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        
     }
-
+    #logo{
+        top: 22px;
+        right: 100px;
+        bottom: 22px;
+        height: 36px;
+        width: 36px;
+    }
 
    .navegador .menuh > div {
     position: relative;
@@ -213,7 +220,7 @@ input[type="checkbox"]{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    height: 56px;
+   
     background-color: white;
     z-index: 0;
     padding-right: 6px;
@@ -240,7 +247,8 @@ input[type="checkbox"]{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    height: 56px;
+    align-items: center;
+    height: 80px;
     background-color: grey;
     z-index: 0;
     padding-right: 6px;
@@ -252,7 +260,9 @@ input[type="checkbox"]{
     background-color: gold;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     z-index: 2;
+    height: 80px;
     opacity: 1;
 }
 
@@ -260,7 +270,7 @@ li{
     background-color: white;
     color: #060A24;
     font-size: 16px;
-    height: 56;
+    height: 80;
     justify-content: center;
     align-items: center;
     transition: 0.2 ease;
