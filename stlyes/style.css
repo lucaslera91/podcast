@@ -531,8 +531,7 @@ h2 {
 
 .invitados {
   grid-row: 4/5;
-  grid-column: 1/2;
-  background-color: grey; }
+  grid-column: 1/2; }
 
 .invitados .imagenes {
   display: flex;
