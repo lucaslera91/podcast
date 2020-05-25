@@ -65,6 +65,7 @@ h1{
     width: inherit;
     height: inherit;
     opacity: 0;
+    transition: all 0.4s ease-in-out;
 }
 
 .conocemas:hover::before {
@@ -74,6 +75,9 @@ h1{
 .conocemas:hover{
    color: white;
     
+}
+.conocemas:focus{
+    outline: 0px;
 }
 
     .episodios{
@@ -271,9 +275,10 @@ text-align: center;
 }
 .escucha:hover{
    color: white;
-    
 }
-
+.escucha:active{
+    border: none;
+}
 
 
 
