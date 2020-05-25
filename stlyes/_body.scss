@@ -177,6 +177,8 @@ align-items: center;
 .conexion h2{
     color: #060A24;
     margin: 0px;
+    padding-left: 16px;
+    padding-bottom: 24px;
 }
 .conexion .simbolos{
   display: flex;
@@ -184,13 +186,16 @@ align-items: center;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+  }
+  .conexion img{
+      padding: 13px 0px;
+  }
 .simbolo1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 288px;
+    width: 320px;
     height: 162px;
 }
 .simbolo2{
