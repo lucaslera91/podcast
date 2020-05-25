@@ -361,11 +361,12 @@ h1 {
   outline: 0; }
 
 h2 {
-  margin-top: -64px;
   font-size: 36px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  padding-left: 16px;
-  color: white;
+  font-family: 'IBM Plex Sans', sans-serif; }
+
+.episodios h2 {
+  margin-top: -64px;
+  color: #FFFFFF;
   text-align: start;
   grid-row: 1/2;
   grid-column: 1/3;
@@ -431,12 +432,14 @@ h2 {
 .invitados {
   position: relative;
   margin: 0px;
-  grid-column: 1/2; }
+  grid-column: 1/2;
+  padding-bottom: 48px; }
 
 .invitados h2 {
   color: black;
   position: relative;
   margin: 0px;
+  padding-left: 16px;
   padding-bottom: 14px; }
 
 .invitados .imagenes {
@@ -452,6 +455,10 @@ h2 {
 .conexion {
   grid-row: 5/6;
   grid-column: 1/3; }
+
+.conexion h2 {
+  color: #060A24;
+  margin: 0px; }
 
 .conexion .simbolos {
   display: flex;
