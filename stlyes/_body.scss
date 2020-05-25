@@ -143,17 +143,19 @@ margin-top:-75.5px;
     word-wrap: true;
     padding: 16px;
     font-size: 14px;
+    padding-bottom: 38px;
 }
 .invitados {
     position: relative;
     margin: 0px;
-    padding: 0 0 0 0;
+   
    grid-column: 1/2;
 }
 .invitados h2{
     color: black;
     position: relative;
     margin: 0px;
+    padding-bottom: 14px;
 }
 .invitados .imagenes {
 display: flex;
