@@ -656,8 +656,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 584px; }
+    width: 100%; }
 
   .episode1 {
     grid-column: 1/2; }
