@@ -134,10 +134,11 @@ input[type="checkbox"]{
     display: flex;
     width: 100%;
     height: 2px;
-    background-color: black;
     z-index: -1;
     justify-content: center;
     transition: 0.4s ease-in-out;
+    background-color: black;
+
     
 }
 .navegador .menuh > div:before {
@@ -146,8 +147,8 @@ input[type="checkbox"]{
     top: -5px;
     width: 100%;
     height: 2px;
-   background-color: black;
     z-index: 1;
+    background-color: black;
 }
 .navegador .menuh > div:after {
     content: '';
@@ -155,8 +156,9 @@ input[type="checkbox"]{
     top: 5px;
     width: 100%;
     height: 2px;
-    background-color: black;
     z-index: 1;
+    background-color: black;
+
 }
 #hamburguesa:checked ~ .menuh > div{
     transform: rotate(135deg);
@@ -178,11 +180,13 @@ input[type="checkbox"]{
        display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        height: 80px;
+        padding-right: 100px;
         
     }
     #logo{
         top: 22px;
-        right: 100px;
+        left: 100px;
         bottom: 22px;
         height: 36px;
         width: 36px;
@@ -193,8 +197,7 @@ input[type="checkbox"]{
     display: flex;
     width: 100%;
     height: 0px;
-    background-color: black;
-    z-index: -1;
+     z-index: -1;
     justify-content: center;
     transition: 0.4s ease-in-out;
     
@@ -224,7 +227,6 @@ input[type="checkbox"]{
    
     background-color: white;
     z-index: 0;
-    padding-right: 6px;
     
 }
 #hamburguesa:checked ~ #menu {
@@ -250,15 +252,12 @@ input[type="checkbox"]{
     justify-content: flex-end;
     align-items: center;
     height: 80px;
-    background-color: grey;
     z-index: 0;
-    padding-right: 6px;
     width: auto;
 
 }
 
 #menu {
-    background-color: gold;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -274,6 +273,7 @@ li{
     height: 80px;
     justify-content: center;
     align-items: center;
+    padding-left: 68px;
    
 
     
