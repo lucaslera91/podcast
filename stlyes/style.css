@@ -312,18 +312,59 @@ footer p {
   display: flex;
   justify-content: center; }
 
-/*.textoiconos {
-    text-align: start;
-    width: 227px;
-    white-space: nowrap;
-     background-color: green;
-    padding-left: 47px;
-    padding-right: 46px;
-    padding-top: 24px;
-    font-size: 14px;
+/* ---------------------------------------------------------*/
+/* ---------------------------------------------------------*/
+/* ---------------------------------------------------------*/
+/* ---------------------------------------------------------*/
+/* ---------------------------------------------------------*/
+/* ---------------------------------------------------------*/
+/* ---------------------------------------------------------*/
+@media screen and (min-width: 700px) {
+  footer {
+    /*position: relative;
+    bottom: -50px;*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95px; }
+
+  .iconosredes {
     position: relative;
     bottom: 7px;
-}*/
+    padding-top: 7px;
+    display: flex;
+    justify-content: center;
+    /*padding-left: 47px;
+    padding-right: 47px;*/
+    width: 270px; }
+
+  footer p {
+    font-size: 14px;
+    padding-bottom: 24px;
+    text-align: center; }
+
+  .iconosredes i {
+    height: 28px;
+    width: 14px;
+    padding-bottom: 31px; }
+
+  .icono1 {
+    display: flex;
+    justify-content: center; }
+
+  .icono2 {
+    display: flex;
+    justify-content: center; }
+
+  .icono3 {
+    display: flex;
+    justify-content: center; }
+
+  .icono4 {
+    display: flex;
+    justify-content: center; } }
 main {
   position: relative;
   top: 44px;
@@ -419,7 +460,8 @@ h2 {
   /*grid-template-rows: 42px 1fr/*225px 225px 225px 225px*/
   justify-content: center;
   align-items: center;
-  height: 1203.5px; }
+  padding: 110px 0;
+  /* height: 1203.5px;*/ }
 
 .episodios iframe {
   position: relative;
@@ -639,10 +681,10 @@ h2 {
     /*flex-direction: column;*/
     padding: 100px 0px 0 0px;
     grid-template-columns: 50% 50%;
-    /*grid-template-rows: 42px 1fr/*225px 225px 225px 225px*/
+    grid-template-rows: 42px 225px 225px;
     justify-content: center;
     align-items: center;
-    height: 1024.5px;
+    /*height: 1024.5px;*/
     grid-gap: 72px; }
 
   .episodios h2 {
