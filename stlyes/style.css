@@ -655,11 +655,11 @@ h2 {
 
   .intro {
     grid-column: 1/3;
-    padding-left: 184px;
+    padding-left: 12.7%;
     padding-top: 13px; }
 
   .conocemas {
-    width: 228px;
+    width: 226px;
     margin-bottom: 0; }
 
   .background {
@@ -669,7 +669,7 @@ h2 {
     padding: 0px;
     transform: skewY(-5.5deg);
     background: linear-gradient(225deg, #0000FF, #0000A3);
-    padding-bottom: 100px;
+    padding-bottom: 12%;
     height: auto; }
 
   .episodios {
@@ -681,7 +681,7 @@ h2 {
     grid-column: 1/3;
     display: grid;
     /*flex-direction: column;*/
-    padding: 100px 0px 0 0px;
+    padding: 5% 0px 0 0px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 42px 225px 225px;
     justify-content: center;
@@ -691,13 +691,13 @@ h2 {
 
   .episodios h2 {
     position: relative;
-    top: 46px;
+    top: 80%;
     color: #FFFFFF;
     text-align: start;
     grid-row: 1/2;
     grid-column: 1/3;
     font-size: 48px;
-    padding-left: 200px;
+    padding-left: 13.8%;
     margin: 0;
     font-weight: 400; }
 
@@ -782,7 +782,7 @@ h2 {
     color: black;
     position: relative;
     margin: 0px;
-    padding-left: 200px;
+    padding-left: 13.8%;
     padding-bottom: 36px; }
 
   .invitados .imagenes {
@@ -796,14 +796,14 @@ h2 {
     height: 364px; }
 
   .conexion {
-    grid-row: 5/6;
-    grid-column: 1/3;
+    /*grid-row: 5/6;
+    grid-column: 1/3;*/
     padding-bottom: 32px; }
 
   .conexion h2 {
     color: #060A24;
     margin: 0px;
-    padding-left: 16px;
+    padding-left: 13.8%;
     padding-bottom: 24px; }
 
   .conexion .simbolos {
@@ -811,7 +811,8 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding: 0 13.8%; }
 
   .conexion img {
     padding: 13px 0px; }
@@ -819,34 +820,35 @@ h2 {
   .simbolo1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 320px;
-    height: 162px; }
+    width: 260px;
+    height: 130px;
+    margin-bottom: 30px; }
 
   .simbolo2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 162px; }
+    width: 260px;
+    height: 130px; }
 
   .simbolo3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 162px; }
+    width: 260px;
+    height: 130px; }
 
   .simbolo4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 162px; }
+    width: 260px;
+    height: 130px; }
 
   .conexion img {
     height: 104px;
@@ -883,8 +885,7 @@ h2 {
     position: relative;
     cursor: pointer;
     font-size: 18px;
-    margin-bottom: 60px;
-    /* width: */ }
+    width: 345px; }
 
   .escucha::before {
     content: '';
@@ -896,7 +897,8 @@ h2 {
     width: inherit;
     height: inherit;
     opacity: 0;
-    transition: all 0.4s ease-in-out; }
+    transition: all 0.4s ease-in-out;
+    width: 345px; }
 
   .escucha:hover::before {
     opacity: 1; }
