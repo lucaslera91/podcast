@@ -88,7 +88,7 @@ h2{
     padding-left: 16px;
 }
 .background{
-   margin-top: 24px;
+   margin-top: 55px;
     transform: skewY(-5.5deg);
     background: linear-gradient(225deg, #0000FF , #0000A3);
 }
@@ -305,7 +305,7 @@ align-items: center;
     /* ---------------------------------------------------------*/
 
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 764px){
     h1{
         font-size: 64px;
     }
