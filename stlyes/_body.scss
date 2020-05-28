@@ -534,28 +534,35 @@ align-items: center;
        width: 104px;
     }
     .background2{
-        padding-top: 35px;
+        padding-top: 75px;
         background: linear-gradient(225deg, #0000FF , #0000A3);
-        transform: skewY(-5.5deg);
+        /*transform: skewY(-5.5deg);*/
+        clip-path: polygon(
+        0 35%,
+        100% 0,
+        100% 100%,
+        0 100%
+        );
         color: #FFFFFF;
-        padding-bottom: 50px;
+        padding-bottom: 150px;
     }
     
     .novedades{
-        transform: skewY(5.5deg);
+     /*transform: skewY(5.5deg);*/
        grid-row: 6/7;
        grid-column: 1/2;
        display: flex;
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       padding: 0px 16px 0px 16px;
+       padding: 150px 16px 0px 16px;
     }
     
     .novedades h2{
         text-align: center;
         margin-bottom: 36px;
         font-weight: 400;
+
     }
     .escucha{
         height: 48px; 
@@ -566,7 +573,7 @@ align-items: center;
         cursor: pointer;
         font-size: 18px;
         margin-bottom: 60px;
-    
+       /* width: */
     }
     .escucha::before {
         content:'';
