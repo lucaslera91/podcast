@@ -319,36 +319,41 @@ footer p {
 /* ---------------------------------------------------------*/
 /* ---------------------------------------------------------*/
 /* ---------------------------------------------------------*/
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 763px) {
   footer {
     /*position: relative;
     bottom: -50px;*/
     background-color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 95px; }
 
   .iconosredes {
     position: relative;
-    bottom: 7px;
-    padding-top: 7px;
+    top: 5px;
     display: flex;
     justify-content: center;
     /*padding-left: 47px;
     padding-right: 47px;*/
-    width: 270px; }
+    width: 30%;
+    max-width: 270px;
+    padding-right: 7%;
+    align-items: center; }
 
   footer p {
+    position: relative;
+    top: 13px;
+    display: table-cell;
+    vertical-align: middle;
     font-size: 14px;
-    padding-bottom: 24px;
-    text-align: center; }
+    padding-left: 7%;
+    text-align: start; }
 
   .iconosredes i {
     height: 28px;
-    width: 14px;
-    padding-bottom: 31px; }
+    width: 14px; }
 
   .icono1 {
     display: flex;
