@@ -275,7 +275,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 121px; }
+  height: 125px; }
 
 .iconosredes {
   position: relative;
@@ -285,7 +285,17 @@ footer {
   justify-content: center;
   /*padding-left: 47px;
   padding-right: 47px;*/
-  width: 270px; }
+  width: 270px;
+  color: #060A24; }
+
+.iconosredes a {
+  display: flex;
+  text-decoration: none;
+  color: #060A24;
+  height: 28px;
+  width: 14px;
+  padding-bottom: 31px;
+  transform: translateY(-10px); }
 
 footer p {
   font-size: 14px;
@@ -299,8 +309,7 @@ footer p {
 
 .icono1 {
   display: flex;
-  justify-content: center;
-  background-image: url(https://www.spotify.com/ar/); }
+  justify-content: center; }
 
 .icono2 {
   display: flex;
