@@ -19,9 +19,11 @@ body {
   font-weight: 100; }
 
 header {
+  position: absolute;
   display: flex;
   width: 100%;
-  left: 0px; }
+  left: 0px;
+  z-index: 3; }
 
 #logo {
   display: flex;
@@ -540,8 +542,11 @@ h2 {
   align-items: center; }
 
 .invitados img {
-  width: 320px;
-  height: 243px; }
+  /*width:320px;
+  height: 243px;*/
+  max-width: 480px;
+  height: auto;
+  width: 100%; }
 
 .conexion {
   grid-row: 5/6;
@@ -692,7 +697,7 @@ h2 {
 
   .episodios {
     position: relative;
-    top: 10px;
+    top: 30px;
     /*correccion de posicion*/
     margin: 0;
     grid-row: 2/3;
@@ -709,6 +714,7 @@ h2 {
 
   .episodios h2 {
     position: relative;
+    transform: translateY(-20px);
     top: 80%;
     color: #FFFFFF;
     text-align: start;
@@ -813,8 +819,9 @@ h2 {
     align-items: center; }
 
   .invitados img {
-    width: 480px;
-    height: 364px; }
+    max-width: 480px;
+    height: auto;
+    width: 100%; }
 
   .conexion {
     /*grid-row: 5/6;
