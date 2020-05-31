@@ -53,7 +53,7 @@ h1{
 .conocemas::before {
     content:'';
     
-    background: linear-gradient(to right, #00F0B8, #0000FE);
+    background: linear-gradient(to right, #00F0B8 0%, #0000FE 100%);
     position: absolute;
     z-index: -1;
     top:0px;
@@ -281,7 +281,7 @@ align-items: center;
 .escucha::before {
     content:'';
     
-    background: linear-gradient(to right, #00F0B8, #0000FE);
+    background: linear-gradient(to right, #00F0B8 0%, #0000FE 100%);
     position: absolute;
     z-index: -1;
     top:0px;
@@ -311,6 +311,10 @@ align-items: center;
 
 
 @media screen and (min-width: 764px){
+    main{
+        position: relative;
+        top: 120px;
+    }
     h1{
         font-size: 64px;
     }
