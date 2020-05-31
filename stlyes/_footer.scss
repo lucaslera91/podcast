@@ -236,6 +236,7 @@ footer p {
     .iconosredes i {
         height: 28px;
         width: 14px;
+        transition: 0.1s ease-in-out;
     }
     .icono1{
         display: flex;
@@ -254,4 +255,10 @@ footer p {
         display: flex;
         justify-content: center;
     }
+}
+.iconosredes a i:hover {
+    height: 28px;
+    width: 14px;
+    transform: scale(1.3);
+    color: #00F0B8;
 }
