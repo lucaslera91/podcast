@@ -550,70 +550,7 @@ align-items: center;
        height: 104px;
        width: 104px;
     }
-    .background2{
-        padding-top: 75px;
-        background: linear-gradient(225deg, #0000FF , #0000A3);
-        /*transform: skewY(-5.5deg);*/
-        clip-path: polygon(
-        0 35%,
-        100% 0,
-        100% 100%,
-        0 100%
-        );
-        color: #FFFFFF;
-        padding-bottom: 150px;
-    }
     
-    .novedades{
-     /*transform: skewY(5.5deg);*/
-       grid-row: 6/7;
-       grid-column: 1/2;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       padding: 150px 16px 0px 16px;
-    }
-    
-    .novedades h2{
-        text-align: center;
-        margin-bottom: 36px;
-        font-weight: 400;
-    }
-    .escucha{
-        height: 48px; 
-        background: #00F3BB;
-        font-family: 'IBM Plex Mono', monospace;
-        z-index: 0;
-        position: relative;
-        cursor: pointer;
-        font-size: 18px;
-        width: 345px;
-    }
-    .escucha::before {
-        content:'';
-        
-        background: linear-gradient(to right, #00F0B8, #0000FE);
-        position: absolute;
-        z-index: -1;
-        top:0px;
-        left:0px;
-        width: inherit;
-        height: inherit;
-        opacity: 0;
-        transition: all 0.4s ease-in-out;
-        width: 345px;
-
-    }
-    .escucha:hover::before {
-        opacity: 1;
-    }
-    .escucha:hover{
-       color: white;
-    }
-    .escucha:focus{
-        outline: 0;
-     }
 
 
 
