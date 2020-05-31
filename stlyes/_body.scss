@@ -18,13 +18,12 @@ main {
     padding-right: 16px;
 }
 h1{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
+    font-weight: 100;
 
 }
+
 #world{
     width: auto;
     text-decoration: line-through;
@@ -34,10 +33,17 @@ h1{
     font-size: 14px;
     margin-bottom: 36px;
 }
+
+
+
 #dot{
     width: auto;
     height: 42px;
     color: blue;
+}
+
+.intro #texto::before{
+ content: 'Un podcast ';
 }
 
 /* ----- button 1 ------*/
@@ -267,14 +273,16 @@ align-items: center;
         display: none;
     }
    
-
-
     .intro{
         grid-column: 1/3;
         padding-left: 12.7%;
         padding-top: 13px;
     }
-    
+    .intro #texto::before{
+        content: none;
+        content: 'El portal de podcasts ';
+       }
+
     .conocemas{
         width: 226px;
         margin-bottom: 0;
