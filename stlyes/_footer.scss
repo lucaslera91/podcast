@@ -15,74 +15,74 @@ footer{
     background: linear-gradient(225deg, #0000FF , #0000A3);
     /*transform: skewY(-5.5deg);*/
     clip-path: polygon(
-    0 35%,
+    0 11%,
     100% 0,
     100% 100%,
     0 100%
     );
     color: #FFFFFF;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
-
 .novedades{
- /*transform: skewY(5.5deg);*/
-   grid-row: 6/7;
-   grid-column: 1/2;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 150px 16px 0px 16px;
-}
-
-.novedades h2{
-    text-align: center;
-    margin-bottom: 36px;
-    font-weight: 400;
-}
-.escucha{
-    height: 48px; 
-    background: #00F3BB;
-    font-family: 'IBM Plex Mono', monospace;
-    z-index: 0;
-    position: relative;
-    cursor: pointer;
-    font-size: 18px;
-    width: 345px;
-}
-.escucha::before {
-    content:'';
-    
-    background: linear-gradient(to right, #00F0B8, #0000FE);
-    position: absolute;
-    z-index: -1;
-    top:0px;
-    left:0px;
-    width: inherit;
-    height: inherit;
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-    width: 345px;
-
-}
-.escucha:hover::before {
-    opacity: 1;
-}
-.escucha:hover{
-   color: white;
-}
-.escucha:focus{
-    outline: 0;
- }
-.lastline{
+    /* transform: skewY(5.5deg);*/
+    grid-row: 6/7;
+    grid-column: 1/2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0px 16px 0px 16px;
+ }
+ 
+ .novedades h2{
+     text-align: center;
+     margin-bottom: 36px;
+     font-weight: 400;
+ }
+ .escucha{
+     height: 48px; 
+     background: #00F3BB;
+     font-family: 'IBM Plex Mono', monospace;
+     z-index: 0;
+     position: relative;
+     cursor: pointer;
+     font-size: 18px;
+     margin-bottom: 60px;
+ 
+ }
+ .escucha::before {
+     content:'';
+     
+     background: linear-gradient(to right, #00F0B8 0%, #0000FE 100%);
+     position: absolute;
+     z-index: -1;
+     top:0px;
+     left:0px;
+     width: inherit;
+     height: inherit;
+     opacity: 0;
+     transition: all 0.4s ease-in-out;
+ }
+ .escucha:hover::before {
+     opacity: 1;
+ }
+ .escucha:hover{
+    color: white;
+ }
+ .escucha:focus{
+     outline: 0;
+  }
+
+/*--------------------------------------------*/
+
+.lastline{
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 121px;
     width: 100%;
 }
-
 
 .iconosredes{
     position: relative;
@@ -90,6 +90,7 @@ footer{
     padding-top: 7px;
     display: flex;
     justify-content: center;
+    align-items: center;
     /*padding-left: 47px;
     padding-right: 47px;*/
     width:  270px;
@@ -147,20 +148,80 @@ footer p {
 @media screen and (min-width: 763px){
 
     footer{
-        
+        position: relative;
+        top: 200px;
         /*position: relative;
         bottom: -50px;*/
         background-color: white;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 95px;
     
     }
+    .background2{
+        margin-top: 50px;
+        padding-top: 150px;
+        clip-path: polygon(
+        0 35%,
+        100% 0,
+        100% 100%,
+        0 100%
+        );
+    }
+    .novedades h2{
+        text-align: center;
+        margin-bottom: 36px;
+        font-weight: 400;
+    }
+    .escucha{
+        height: 48px; 
+        background: #00F3BB;
+        font-family: 'IBM Plex Mono', monospace;
+        z-index: 0;
+        position: relative;
+        cursor: pointer;
+        font-size: 18px;
+        width: 345px;
+    }
+    .escucha::before {
+        content:'';
+        
+        background: linear-gradient(to right, #00F0B8 0%, #0000FE 100%);
+        position: absolute;
+        z-index: -1;
+        top:0px;
+        left:0px;
+        width: inherit;
+        height: inherit;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        width: 345px;
+    
+    }
+  
+    .escucha:hover::before {
+        opacity: 1;
+    }
+    .escucha:hover{
+       color: white;
+    }
+    .escucha:focus{
+        outline: 0;
+     }
+      
+    .lastline{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 95px;
+        width: 100%;
+    }
     .iconosredes{
         position: relative;
-        top:5px;
+        top:13px;
         display: flex;
         justify-content: center;
         /*padding-left: 47px;
